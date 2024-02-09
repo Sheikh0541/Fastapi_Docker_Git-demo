@@ -1,0 +1,3 @@
+
+To run the surver:
+    uvicorn main:app --reload
