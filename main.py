@@ -13,9 +13,16 @@ def read_root():
 def hello_user(name: str):
     return f"Hello: {name}"
 
+dir = "Images/"
+
 @app.post("/predict")
-def predict_image():
-    return f"Predicted type =" 
+async def predict_image(file: UploadFile = File(...)):
+        image = await file.read() 
+        file_name = "new.jpg" 
+        with open(f"{dir}{file_name}", "wb") as f:
+             f.write(image) 
+
+        return  
 
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8000)
