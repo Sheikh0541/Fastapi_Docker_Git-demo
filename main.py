@@ -32,4 +32,4 @@ def predict_image(image: UploadFile):
         return f"This is a {result}"  
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="localhost", port=8000)
+    uvicorn.run(app)

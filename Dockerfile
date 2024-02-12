@@ -1,6 +1,6 @@
 
 # Use the official Python image from Docker Hub
-FROM python:3.10.11-slim
+FROM python:3.10
 
 # Set the working directory in the container
 WORKDIR / G:\ML Intern at Celloscope\Demo_01
