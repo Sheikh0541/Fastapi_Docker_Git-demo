@@ -6,13 +6,13 @@ import uvicorn
 
 app = FastAPI()
 
-@app.get("/hello")
-def read_root():
-    return {"hello": "world"} 
+# @app.get("/hello")
+# def read_root():
+#     return {"hello": "world"} 
 
-@app.get("/")
-def hello_user(name: str):
-    return f"Hello: {name}"
+# @app.get("/")
+# def hello_user(name: str):
+#     return f"Hello: {name}"
 
 dir = "Images/"
 
