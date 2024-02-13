@@ -1,5 +1,8 @@
-# Use the official Python image from Docker Hub
 FROM python:3.10
+
+# Install necessary system packages
+RUN apt-get update && \
+    apt-get install -y libgl1-mesa-glx
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
